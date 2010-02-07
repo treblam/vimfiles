@@ -1,0 +1,6 @@
+"Set the name of your system,can be: linux, mac, vista, xp
+fun! MySys()
+  return "xp"
+endfun
+
+source ~/vimfiles/vimrc
