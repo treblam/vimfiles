@@ -39,8 +39,8 @@ set autoread
 set mouse=a
 
 "Set mapleader
-let mapleader = ","
-let g:mapleader = ","
+"let mapleader = ","
+"let g:mapleader = ","  "I still like the default '\'
 
 "Fast saving
 map <leader>w :w!<cr>
@@ -198,19 +198,23 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 noremap <space> <c-f>
 noremap <M-space> <c-b>
 
-"Smart way to move btw. windows
+"Smart way to move btw. windows // now I want to map <C-j> and <C-k> to gj and gk respectively
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+"map <C-j> and <C-k> to gj and gk respectively
+noremap <Up> gk
+noremap <Down> gj
 
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function can be found in "Buffer related" section
 nnoremap <silent> <Leader>bd :Bclose<CR>
 "map <down> <leader>bd
 "Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+"map <right> :bn<cr>
+"map <left> :bp<cr>
 
 " Window movement
 noremap <C-TAB> :bn<CR>
@@ -332,7 +336,7 @@ cno $h e ~/
 if MySys() == 'vista'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/Ê°åÈù¢/
+  cno $d e ~/◊¿√Ê/
 endif
 cno $j e ./
 
