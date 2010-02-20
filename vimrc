@@ -6,8 +6,8 @@ set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set vim to behave like windows applications
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $VIMRUNTIME/mswin.vim
-behave mswin
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings to solve the chinese error code
@@ -137,6 +137,7 @@ set whichwrap+=<,>,h,l
 
 "Ignore case when searching
 set ignorecase
+set smartcase
 set incsearch
 
 "Set magic on
