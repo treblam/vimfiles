@@ -25,8 +25,11 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Sets how many lines of history VIM har to remember
+"Sets how many lines of history VIM has to remember
 set history=400
+
+"Share windows clipboard
+set clipboard=unnamed 
 
 "Enable filetype plugin
 filetype plugin on
@@ -35,12 +38,15 @@ filetype indent on
 "Set to auto read when a file is changed from the outside
 set autoread
 
+"Current directory is always matching the content of the active window
+set autochdir
+
 "Have the mouse enabled all the time:
 set mouse=a
 
 "Set mapleader
-"let mapleader = ","
-"let g:mapleader = ","  "I still like the default '\'
+let mapleader = ","
+let g:mapleader = ","
 
 "Fast saving
 map <leader>w :w!<cr>
@@ -109,10 +115,11 @@ autocmd BufEnter * :syntax sync fromstart
 " VIM userinterface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Set 7 lines to the curors - when moving vertical..
-set so=7
+set scrolloff=7
 
 "Turn on WiLd menu
 set wildmenu
+"set wildmode=longest,list
 
 "Always show current position
 set ruler
@@ -121,13 +128,13 @@ set ruler
 set cmdheight=2
 
 "Show line number
-set nu
+set number
 
 "Do not redraw, when running macros.. lazyredraw
 set lz
 
 "Change buffer - without saving
-set hid
+set hidden
 
 "Set backspace
 set backspace=eol,start,indent
@@ -135,10 +142,11 @@ set backspace=eol,start,indent
 "Bbackspace and cursor keys wrap to
 set whichwrap+=<,>,h,l
 
-"Ignore case when searching
+"Search options
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 
 "Set magic on
 set magic
@@ -152,9 +160,6 @@ set showmatch
 
 "How many tenths of a second to blink
 set mat=2
-
-"Highlight search things
-set hlsearch
 
 """"""""""""""""""""""""""""""
 " Statusline
@@ -199,7 +204,7 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 noremap <space> <c-f>
 noremap <M-space> <c-b>
 
-"Smart way to move btw. windows // now I want to map <C-j> and <C-k> to gj and gk respectively
+"Smart way to move btw. windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -238,6 +243,10 @@ imap <m-$> <esc>$a
 imap <m-0> <esc>0i
 imap <D-$> <esc>$a
 imap <D-0> <esc>0i
+
+"Swap ` to '
+nnoremap ' `
+nnoremap ` '
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Autocommands
@@ -337,7 +346,7 @@ cno $h e ~/
 if MySys() == 'vista'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/×ÀÃæ/
+  cno $d e ~/????/
 endif
 cno $j e ./
 
@@ -461,15 +470,15 @@ set fdl=0
 " Text options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set tabstop=4
 
 map <leader>t2 :set shiftwidth=2<cr>
 map <leader>t4 :set shiftwidth=4<cr>
-au FileType html,python,vim,javascript setl shiftwidth=2
-au FileType html,python,vim,javascript setl tabstop=2
-au FileType java setl shiftwidth=4
-au FileType java setl tabstop=4
+"au FileType html,python,vim,javascript setl shiftwidth=2
+"au FileType html,python,vim,javascript setl tabstop=2
+"au FileType java setl shiftwidth=4
+"au FileType java setl tabstop=4
 
 set smarttab
 set lbr
@@ -479,10 +488,10 @@ set tw=500
    " Indent
    """"""""""""""""""""""""""""""
    "Auto indent
-   set ai
+   set autoindent
 
    "Smart indet
-   set si
+   set smartindent
 
    "C-style indeting
    set cindent
