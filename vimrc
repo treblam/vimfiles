@@ -119,7 +119,8 @@ set scrolloff=7
 
 "Turn on WiLd menu
 set wildmenu
-"set wildmode=longest,list
+"Bash-like autocomplete style
+"set wildmode=longest,list  
 
 "Always show current position
 set ruler
@@ -131,7 +132,7 @@ set cmdheight=2
 set number
 
 "Do not redraw, when running macros.. lazyredraw
-set lz
+set lazyredraw
 
 "Change buffer - without saving
 set hidden
