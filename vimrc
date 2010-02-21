@@ -119,8 +119,9 @@ set scrolloff=7
 
 "Turn on WiLd menu
 set wildmenu
-"Bash-like autocomplete style
-"set wildmode=longest,list  
+
+"Bash-like auto-complete style
+set wildmode=list:longest,full
 
 "Always show current position
 set ruler
@@ -140,7 +141,7 @@ set hidden
 "Set backspace
 set backspace=eol,start,indent
 
-"Bbackspace and cursor keys wrap to
+"Backspace and cursor keys wrap to
 set whichwrap+=<,>,h,l
 
 "Search options
@@ -206,22 +207,22 @@ noremap <space> <c-f>
 noremap <M-space> <c-b>
 
 "Smart way to move btw. windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 "map <C-j> and <C-k> to gj and gk respectively
-noremap <Up> gk
-noremap <Down> gj
+noremap <C-k> gk
+noremap <C-j> gj
 
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function can be found in "Buffer related" section
 nnoremap <silent> <Leader>bd :Bclose<CR>
 "map <down> <leader>bd
 "Use the arrows to something usefull
-"map <right> :bn<cr>
-"map <left> :bp<cr>
+map <right> :bn<cr>
+map <left> :bp<cr>
 
 " Window movement
 noremap <C-TAB> :bn<CR>
@@ -347,7 +348,7 @@ cno $h e ~/
 if MySys() == 'vista'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/????/
+  cno $d e ~/桌面/
 endif
 cno $j e ./
 
