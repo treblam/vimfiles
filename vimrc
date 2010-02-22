@@ -17,7 +17,7 @@ lang mes en
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin-1
 if MySys() == 'xp'
-  set fileencoding=cp936
+  setglobal fileencoding=cp936
 endif
 "set fileencoding=utf-8
 "au BufReadPost setlocal nobomb
