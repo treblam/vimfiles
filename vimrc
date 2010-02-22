@@ -121,7 +121,7 @@ set scrolloff=7
 set wildmenu
 
 "Bash-like auto-complete style
-set wildmode=list:longest,full
+"set wildmode=list:longest,full
 
 "Always show current position
 set ruler
@@ -348,7 +348,7 @@ cno $h e ~/
 if MySys() == 'vista'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/Ê°åÈù¢/
+  cno $d e ~/◊¿√Ê/
 endif
 cno $j e ./
 
