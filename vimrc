@@ -348,7 +348,7 @@ cno $h e ~/
 if MySys() == 'vista'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/×ÀÃæ/
+  cno $d e ~/æ¡Œé¢/
 endif
 cno $j e ./
 
