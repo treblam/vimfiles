@@ -16,6 +16,7 @@ lang en
 lang mes en
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin-1
+"Set the default encoding for new files in xp
 if MySys() == 'xp'
   setglobal fileencoding=cp936
 endif
