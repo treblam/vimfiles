@@ -93,8 +93,8 @@ elseif
   "colorscheme zellner
 endif
 
-if MySys() == 'vista'
-  "Set font for Vista
+if MySys() == 'win7'
+  "Set font for win7
   set guifont=Consolas:h12
   set guifontwide=NSimsun:h12
 elseif MySys() == 'xp'
@@ -346,7 +346,7 @@ endfunc
 
 "Smart mappings on the command line
 cno $h e ~/
-if MySys() == 'vista'
+if MySys() == 'win7'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
   cno $d e ~/桌面/
@@ -558,7 +558,7 @@ map <leader>s? z=
    """"""""""""""""""""""""""""""
    " Tag list (ctags) 
    """"""""""""""""""""""""""""""
-   if MySys() == 'vista'
+   if MySys() == 'win7'
      let Tlist_Ctags_Cmd=$HOME.'\vimfiles\ctags57\ctags.exe'
    elseif MySys() == 'xp'
      let Tlist_Ctags_Cmd='C:\Docume~1\Administrator\vimfiles\ctags57\ctags.exe'
