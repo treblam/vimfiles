@@ -6,8 +6,8 @@ set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set vim to behave like windows applications
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings to solve the chinese error code
@@ -30,7 +30,7 @@ endif
 set history=400
 
 "Share windows clipboard
-set clipboard=unnamed 
+"set clipboard=unnamed 
 
 "Enable filetype plugin
 filetype plugin on
