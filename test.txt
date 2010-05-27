@@ -18,10 +18,3 @@ fd
 a
 fa
 d
-fa
-fd
-a
-df
-a
-d
-f
