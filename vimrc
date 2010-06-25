@@ -40,7 +40,7 @@ filetype indent on
 set autoread
 
 "Current directory is always matching the content of the active window
-set autochdir
+"set autochdir
 
 "Have the mouse enabled all the time:
 set mouse=a
