@@ -1,6 +1,6 @@
 ScriptID SourceID Filename
 --------------------------
-42 12104 bufexplorer.vim
+42 12904 bufexplorer.vim
 1899 7528 FindFile.vim
 642 8136 getscript.vim
 39 8196 matchit.vim
@@ -10,9 +10,9 @@ ScriptID SourceID Filename
 1658 11834 NERD_tree.vim
 1318 8450 snippetsEmu.vim
 182 5938 supertab.vim
-1697 8283 surround.vim
+1697 12566 surround.vim
 198 632 templatefile.vim
 1502 11981 vimball.vim
-301 10362 xml.vim
-1234 12258 yankring.vim
+301 13387 xml.vim
+1234 13554 yankring.vim
 508 9865 ZoomWin.vim
