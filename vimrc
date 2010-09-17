@@ -208,10 +208,10 @@ noremap <space> <c-f>
 noremap <M-space> <c-b>
 
 "Smart way to move btw. windows
-"map <C-j> <C-W>j
-"map <C-k> <C-W>k
-"map <C-h> <C-W>h
-"map <C-l> <C-W>l
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 "map <C-j> and <C-k> to gj and gk respectively
 noremap <C-k> gk
@@ -222,8 +222,8 @@ noremap <C-j> gj
 nnoremap <silent> <Leader>bd :Bclose<CR>
 "map <down> <leader>bd
 "Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+"map <right> :bn<cr>
+"map <left> :bp<cr>
 
 " Window movement
 noremap <C-TAB> :bn<CR>
@@ -541,15 +541,13 @@ map <leader>s? z=
    """"""""""""""""""""""""""""""
    " Minibuffer
    """"""""""""""""""""""""""""""
-   let g:miniBufExplModSelTarget = 1
-   let g:miniBufExplorerMoreThanOne = 2
-   let g:miniBufExplModSelTarget = 0
-   let g:miniBufExplUseSingleClick = 1
-   let g:miniBufExplMapWindowNavVim = 1
+   "let g:miniBufExplMapWindowNavVim = 1 
+   "let g:miniBufExplMapWindowNavArrows = 1 
+   "let g:miniBufExplMapCTabSwitchBufs = 1 
+   "let g:miniBufExplModSelTarget = 1 
+   "let g:bufExplorerSortBy = "name"
 
-   let g:bufExplorerSortBy = "name"
-
-   autocmd BufRead,BufNew :call UMiniBufExplorer
+   "autocmd BufRead,BufNew :call UMiniBufExplorer
 
    """"""""""""""""""""""""""""""
    " Tag list (ctags) 
