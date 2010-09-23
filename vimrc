@@ -40,7 +40,7 @@ filetype indent on
 set autoread
 
 "Current directory is always matching the content of the active window
-"set autochdir
+set autochdir
 
 "Have the mouse enabled all the time:
 set mouse=a
@@ -214,8 +214,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 "map <C-j> and <C-k> to gj and gk respectively
-noremap <C-k> gk
-noremap <C-j> gj
+"noremap <C-k> gk
+"noremap <C-j> gj
 
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function can be found in "Buffer related" section
