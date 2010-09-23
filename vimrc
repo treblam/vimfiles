@@ -81,7 +81,7 @@ if has("gui_running")
 
   "Omni menu colors
   hi Pmenu guibg=#111111
-  hi PmenuSel guibg=#555555 guifg=#ffffff
+  hi PmenuSel guibg=#ff00ff guifg=#ffffff
 
   "Maximize window on startup
   if has("gui_win32")

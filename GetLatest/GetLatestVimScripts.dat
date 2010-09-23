@@ -8,7 +8,6 @@ ScriptID SourceID Filename
 159 3640 minibufexpl.vim
 1218 10318 NERD_commenter.vim
 1658 11834 NERD_tree.vim
-1318 8450 snippetsEmu.vim
 182 5938 supertab.vim
 1697 12566 surround.vim
 198 632 templatefile.vim
@@ -16,3 +15,4 @@ ScriptID SourceID Filename
 301 13387 xml.vim
 1234 13554 yankring.vim
 508 9865 ZoomWin.vim
+2540 11006 snipMate.vim
