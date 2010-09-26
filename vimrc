@@ -242,7 +242,7 @@ catch
 endtry
 
 "Moving fast to front, back and 2 sides ;)
-imap <m-$> <esc>$a
+imap <m-4> <esc>$a
 imap <m-0> <esc>0i
 imap <D-$> <esc>$a
 imap <D-0> <esc>0i
@@ -611,10 +611,10 @@ map <leader>s? z=
 " MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Remove the Windows ^M
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Paste toggle - when pasting something in, don't indent.
-set pastetoggle=<F3>
+set pastetoggle=<F4>
 
 "Remove indenting on empty lines
 map <F2> :%s/\s*$//g<cr>:noh<cr>''
@@ -629,5 +629,7 @@ noremap <leader>d "+d
 noremap <leader>dd "+dd
 noremap <leader>D "+D
 
-" Select all
-map ,a ggVG
+"Select all
+map <leader>a <esc>ggVG
+"Remove highlight
+nmap <silent> <F3> :nohlsearch<CR>
