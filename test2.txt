@@ -19,10 +19,3 @@ df
 a
 fa
 
-f
-a
-df
-a
-df
-a
-ff
