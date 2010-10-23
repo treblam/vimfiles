@@ -12,8 +12,8 @@ set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings to solve the chinese error code
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-lang en
-lang mes en
+lang English_United States
+"lang mes en
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin-1
 "Set the default encoding for new files in xp
@@ -345,7 +345,7 @@ cno $h e ~/
 if MySys() == 'win7'
   cno $d e ~/Desktop/
 elseif MySys() == 'xp'
-  cno $d e ~/Ê°åÈù¢/
+  cno $d e ~/◊¿√Ê/
 endif
 cno $j e ./
 
