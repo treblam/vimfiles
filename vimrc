@@ -77,7 +77,7 @@ if has("gui_running")
   hi cursorline guibg=#333333
   hi CursorColumn guibg=#333333
 
-  colorscheme desert
+  colorscheme oceandeep
 
   "Omni menu colors
   hi Pmenu guibg=#111111
@@ -630,6 +630,6 @@ noremap <leader>dd "+dd
 noremap <leader>D "+D
 
 "Select all
-map <leader>a <esc>ggVG
+"map <leader>a <esc>ggVG
 "Remove highlight
 nmap <silent> <F3> :nohlsearch<CR>
