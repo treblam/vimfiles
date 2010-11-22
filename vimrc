@@ -74,8 +74,8 @@ if has("gui_running")
 
   "Highlight current
   set cursorline
-  hi cursorline guibg=#333333
-  hi CursorColumn guibg=#333333
+  "hi cursorline guibg=#333333
+  "hi CursorColumn guibg=#333333
 
   colorscheme oceandeep
 
@@ -597,15 +597,15 @@ map <leader>s? z=
      setl foldtext=FoldText()
    endfunction
    "au FileType javascript call JavaScriptFold()
-   au FileType javascript setl fen
+   "au FileType javascript setl fen
 
-   au FileType javascript imap <c-t> console.log();<esc>hi
-   au FileType javascript imap <c-a> alert();<esc>hi
-   au FileType javascript setl nocindent
-   au FileType javascript inoremap <buffer> $r return
+   "au FileType javascript imap <c-t> console.log();<esc>hi
+   "au FileType javascript imap <c-a> alert();<esc>hi
+   "au FileType javascript setl nocindent
+   "au FileType javascript inoremap <buffer> $r return
 
-   au FileType javascript inoremap <buffer> $d //<cr>//<cr>//<esc>ka<space>
-   au FileType javascript inoremap <buffer> $c /**<cr><space><cr>**/<esc>ka
+   "au FileType javascript inoremap <buffer> $d //<cr>//<cr>//<esc>ka<space>
+   "au FileType javascript inoremap <buffer> $c /**<cr><space><cr>**/<esc>ka
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC
