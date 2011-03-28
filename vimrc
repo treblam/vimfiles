@@ -42,7 +42,7 @@ filetype indent on
 set autoread
 
 "Current directory is always matching the content of the active window
-set autochdir
+"set autochdir
 
 "Have the mouse enabled all the time:
 set mouse=a
@@ -79,15 +79,12 @@ if has("gui_running")
   "hi cursorline guibg=#333333
   "hi CursorColumn guibg=#333333
 
-  colorscheme oceandeep
-
   "Omni menu colors
   hi Pmenu guibg=#111111
   hi PmenuSel guibg=#ff00ff guifg=#ffffff
 
-elseif
   set background=dark
-  "colorscheme zellner
+  colorscheme oceandeep
 endif
 
 if MySys() == 'win7'

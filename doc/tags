@@ -116,12 +116,12 @@ NERDComComment	NERD_commenter.txt	/*NERDComComment*
 NERDComCredits	NERD_commenter.txt	/*NERDComCredits*
 NERDComDefaultDelims	NERD_commenter.txt	/*NERDComDefaultDelims*
 NERDComEOLComment	NERD_commenter.txt	/*NERDComEOLComment*
-NERDComFiletypes	NERD_commenter.txt	/*NERDComFiletypes*
 NERDComFunctionality	NERD_commenter.txt	/*NERDComFunctionality*
 NERDComFunctionalityDetails	NERD_commenter.txt	/*NERDComFunctionalityDetails*
 NERDComFunctionalitySummary	NERD_commenter.txt	/*NERDComFunctionalitySummary*
 NERDComHeuristics	NERD_commenter.txt	/*NERDComHeuristics*
 NERDComInsertComment	NERD_commenter.txt	/*NERDComInsertComment*
+NERDComInstallation	NERD_commenter.txt	/*NERDComInstallation*
 NERDComInvertComment	NERD_commenter.txt	/*NERDComInvertComment*
 NERDComIssues	NERD_commenter.txt	/*NERDComIssues*
 NERDComLicense	NERD_commenter.txt	/*NERDComLicense*
@@ -271,9 +271,11 @@ g:SuperTabMappingTabLiteral	supertab.txt	/*g:SuperTabMappingTabLiteral*
 g:SuperTabNoCompleteAfter	supertab.txt	/*g:SuperTabNoCompleteAfter*
 g:SuperTabNoCompleteBefore	supertab.txt	/*g:SuperTabNoCompleteBefore*
 g:SuperTabRetainCompletionDuration	supertab.txt	/*g:SuperTabRetainCompletionDuration*
+g:bufExplorerChgWin	bufexplorer.txt	/*g:bufExplorerChgWin*
 g:bufExplorerDefaultHelp	bufexplorer.txt	/*g:bufExplorerDefaultHelp*
 g:bufExplorerDetailedHelp	bufexplorer.txt	/*g:bufExplorerDetailedHelp*
 g:bufExplorerFindActive	bufexplorer.txt	/*g:bufExplorerFindActive*
+g:bufExplorerFuncRef	bufexplorer.txt	/*g:bufExplorerFuncRef*
 g:bufExplorerReverseSort	bufexplorer.txt	/*g:bufExplorerReverseSort*
 g:bufExplorerShowDirectories	bufexplorer.txt	/*g:bufExplorerShowDirectories*
 g:bufExplorerShowRelativePath	bufexplorer.txt	/*g:bufExplorerShowRelativePath*
