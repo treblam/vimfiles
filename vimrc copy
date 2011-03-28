@@ -13,7 +13,7 @@ set nocompatible
 " Settings to solve the chinese error code
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if MySys() == 'xp' || MySys() == 'win7'
-    lang English_United States
+lang English_United States
 endif
 "lang mes en
 set encoding=utf-8
@@ -57,11 +57,11 @@ vmap <leader>w :w!<cr>gv
 nmap <leader>f :find<cr>
 
 "Fast reloading of the .vimrc
-map <leader>s :source ~/.vim/vimrc<cr>
+map <leader>s :source ~/vimfiles/vimrc<cr>
 "Fast editing of .vimrc
-map <leader>v :e! ~/.vim/vimrc<cr>
+map <leader>v :e! ~/vimfiles/vimrc<cr>
 "When .vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim/vimrc
+autocmd! bufwritepost vimrc source ~/vimfiles/vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
@@ -557,9 +557,9 @@ map <leader>s? z=
    " Tag list (ctags) 
    """"""""""""""""""""""""""""""
    if MySys() == 'win7'
-     let Tlist_Ctags_Cmd=$HOME.'\.vim\ctags57\ctags.exe'
+     let Tlist_Ctags_Cmd=$HOME.'\vimfiles\ctags57\ctags.exe'
    elseif MySys() == 'xp'
-     let Tlist_Ctags_Cmd='C:\Docume~1\Administrator\.vim\ctags57\ctags.exe'
+     let Tlist_Ctags_Cmd='C:\Docume~1\Administrator\vimfiles\ctags57\ctags.exe'
    endif
    let Tlist_Sort_Type = "name"
    let Tlist_Show_Menu = 1
@@ -589,7 +589,7 @@ map <leader>s? z=
    """"""""""""""""""""""""""""""
    " JavaScript section
    """""""""""""""""""""""""""""""
-   "au FileType javascript so ~/.vim/syntax/javascript.vim
+   "au FileType javascript so ~/vimfiles/syntax/javascript.vim
    function! JavaScriptFold()
      setl foldmethod=syntax
      setl foldlevelstart=1
