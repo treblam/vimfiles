@@ -145,6 +145,10 @@ set backspace=eol,start,indent
 "Backspace and cursor keys wrap to
 set whichwrap+=<,>,h,l
 
+"Show 
+set listchars=
+set list
+
 "Search options
 set ignorecase
 set smartcase
