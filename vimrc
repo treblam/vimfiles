@@ -71,6 +71,9 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc
 "Enable syntax highlight
 syntax enable
 
+"Set anti-alias
+set antialias
+
 if has("gui_running")
   "Hide the toolbar
   set guioptions-=T
@@ -98,7 +101,9 @@ elseif MySys() == 'xp'
   set guifont=Courier_New:h10:cANSI
   set guifontwide=YaHei_Consolas_Hybrid:h10,NSimsun:h10
 elseif MySys() == 'mac'
-    set guifont=Monaco:h14
+    "set guifont=Monaco:h14
+    set guifont=YaHei_Consolas_Hybrid:h14
+    set guifontwide=YaHei_Consolas_Hybrid:h14
 endif
 
 "Some nice mapping to switch syntax (useful if one mixes different languages in one file)
