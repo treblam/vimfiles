@@ -97,9 +97,8 @@ if MySys() == 'win7'
   set guifont=Consolas:h12
   set guifontwide=NSimsun:h12
 elseif MySys() == 'xp'
-  "Set font for xp
   set guifont=Courier_New:h10:cANSI
-  set guifontwide=YaHei_Consolas_Hybrid:h10,NSimsun:h10
+  set guifontwide=NSimsun:h10
 elseif MySys() == 'mac'
     "set guifont=Monaco:h14
     set guifont=YaHei_Consolas_Hybrid:h14
