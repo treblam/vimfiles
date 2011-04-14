@@ -43,7 +43,8 @@ set autoread
 
 "Current directory is always matching the content of the active window
 if exists('+autochdir')
-  set autochdir
+    "disable autochdir for now, since fuzzyfinder does not support it well
+    "set autochdir
 endif
 
 "Have the mouse enabled all the time:
@@ -573,9 +574,16 @@ map <leader>s? z=
    "noremap <leader>t :Tlist<cr>
 
    """"""""""""""""""""""""""""""
-   " Tag list (ctags) 
+   " NERDTree 
    """"""""""""""""""""""""""""""
-   map <leader>t :NERDTree<cr>
+   map <leader>t :NERDTreeToggle<cr>
+
+
+   """"""""""""""""""""""""""""""
+   " NERDTree 
+   """"""""""""""""""""""""""""""
+   nmap <leader>ff :FufFile **/<CR>
+   nmap <leader>fb :FufBuffer<CR>
 
    """"""""""""""""""""""""""""""
    " LaTeX Suite things
