@@ -86,8 +86,8 @@ if has("gui_running")
   "hi CursorColumn guibg=#333333
 
   "Omni menu colors
-  hi Pmenu guibg=#111111
-  hi PmenuSel guibg=#ff00ff guifg=#ffffff
+  "hi Pmenu guibg=#111111
+  "hi PmenuSel guibg=#ff00ff guifg=#ffffff
 
   set background=dark
   colorscheme oceandeep
@@ -577,10 +577,16 @@ map <leader>s? z=
    " NERDTree 
    """"""""""""""""""""""""""""""
    map <leader>t :NERDTreeToggle<cr>
-
+   map <leader>tb :NERDTreeFromBookmark 
+   map <leader>ba :NERDTreeFind<cr> 
 
    """"""""""""""""""""""""""""""
-   " NERDTree 
+   " Most Recently Used(MRU) files
+   """"""""""""""""""""""""""""""
+   map <leader>m :MRU<cr>
+
+   """"""""""""""""""""""""""""""
+   " FuzzyFinder 
    """"""""""""""""""""""""""""""
    nmap <leader>ff :FufFile **/<CR>
    nmap <leader>fb :FufBuffer<CR>
@@ -630,7 +636,7 @@ map <leader>s? z=
 " MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Remove the Windows ^M
-noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <leader>dm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Paste toggle - when pasting something in, don't indent.
 set pastetoggle=<F4>
